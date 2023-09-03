@@ -1,4 +1,4 @@
-package com.hahow.ui
+package com.hahow.views.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -51,12 +51,12 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
     }
 
     /**
-     * 進行 View 相關的加載，例如處理 RecyclerView layoutManager, EditText TextWatcher。
+     * 進行 View 相關的加載及初始化
      * */
     protected open fun VB.initView() {}
 
     /**
-     * 負責綁定 ViewModel.LiveData 跟 View 之間的關係，
+     * 負責綁定 ViewModel.StateFlow/SharedFlow 跟 View 之間的關係，
      * */
     protected open fun observeData() {}
 

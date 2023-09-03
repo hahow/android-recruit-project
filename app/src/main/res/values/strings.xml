@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">android-recruit-project</string>
+    <string name="product_status_incubating">募資中</string>
+    <string name="product_status_published">已開課</string>
+    <string name="product_status_success">募資成功</string>
+    <string name="loading_progress">讀取中…</string>
+    <string name="countdown_days">倒數 %d 天</string>
+    <string name="alert_dialog_positive_button_text">確認</string>
+    <string name="empty_message">目前沒有任何資料，請下拉刷新</string>
+    <string name="sold_out_percentage">"%.0f%%"</string>
+    <string name="course_image_content_description">course image</string>
+
 </resources>
