@@ -1,14 +1,13 @@
 package shawn.ui.class_schedule
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import `in`.hahow.android_recruit_project.R
 import `in`.hahow.android_recruit_project.databinding.ActivityClassScheduleBinding
+import shawn.ui.class_schedule.list.ClassScheduleListFragment
 
 class ClassScheduleActivity : AppCompatActivity(), ClassScheduleActivityHandler {
 

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">android-recruit-project</string>
+
+    <string name="class_schedule_hot_title">熱門課程</string>
 </resources>
