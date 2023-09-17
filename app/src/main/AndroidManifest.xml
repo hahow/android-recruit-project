@@ -10,10 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidrecruitproject">
         <activity
+            android:name="shawn.ui.class_schedule.ClassScheduleActivity"
+            android:exported="false" />
+        <activity
             android:name="shawn.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
