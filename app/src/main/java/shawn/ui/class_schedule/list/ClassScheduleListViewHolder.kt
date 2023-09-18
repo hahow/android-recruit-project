@@ -23,6 +23,7 @@ class ClassScheduleListViewHolder(private val binding: ItemClassScheduleListBind
         binding.tvTime.text = "倒數三天"
         binding.tvCoin.text = "好幣 2,000 MP"
         binding.tvStatus.text = "募資中"
+        binding.progressBar.progress = 25
 
         loadCoverImage(binding.ivCover,
             "https://images.api.hahow.in/images/614eca15a39712000619b672","")

@@ -26,8 +26,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:background="@drawable/radius_5dp"
+            android:background="@drawable/radius_10dp_4cc5b6"
             android:textSize="12sp"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="募資中" />
@@ -54,13 +55,17 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
         tools:text="20%" />
 
-    <ProgressBar
+    <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
+        android:indeterminate="false"
+        app:trackCornerRadius="10dp"
+        app:trackColor="@color/gray_e7e7e7"
+        app:indicatorColor="@color/orange_f1b470"
         app:layout_constraintStart_toStartOf="@+id/tv_goal"
-        app:layout_constraintTop_toBottomOf="@+id/tv_goal" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_goal"
+        tools:progress="10"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
