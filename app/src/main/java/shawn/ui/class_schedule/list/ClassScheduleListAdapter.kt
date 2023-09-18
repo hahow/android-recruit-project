@@ -7,8 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import `in`.hahow.android_recruit_project.databinding.ItemClassScheduleListBinding
 import java.io.Serializable
 
-class ClassScheduleListAdapter :
-    ListAdapter<ClassSchedule, ClassScheduleListViewHolder>(DiffCallBack()) {
+class ClassScheduleListAdapter : ListAdapter<ClassSchedule, ClassScheduleListViewHolder>(DiffCallBack()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ClassScheduleListViewHolder {
         return ClassScheduleListViewHolder(

@@ -26,6 +26,8 @@ class ClassScheduleActivity : AppCompatActivity(), ClassScheduleActivityHandler 
         super.onCreate(savedInstanceState)
         binding = ActivityClassScheduleBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        goClassScheduleList()
     }
 
     override fun goClassScheduleList() {

@@ -10,6 +10,9 @@ import shawn.base.BaseFragment
 class ClassScheduleListFragment : BaseFragment() {
 
     private lateinit var binding: FragmentClassScheduleListBinding
+    private val classScheduleListAdapter: ClassScheduleListAdapter by lazy {
+        ClassScheduleListAdapter()
+    }
     companion object {
         fun newInstance(): ClassScheduleListFragment {
             return ClassScheduleListFragment()
@@ -32,7 +35,10 @@ class ClassScheduleListFragment : BaseFragment() {
     }
 
     private fun initView(){
-
+        binding.recyclerview.adapter = classScheduleListAdapter
+        val list = arrayListOf<ClassSchedule>()
+        list.add(ClassSchedule("123","123"))
+        classScheduleListAdapter.submitList(list)
     }
 
 }
