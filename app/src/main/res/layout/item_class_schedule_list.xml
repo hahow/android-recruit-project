@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingVertical="15dp"
     android:paddingHorizontal="15dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:paddingVertical="15dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cover"
@@ -17,9 +17,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
             android:scaleType="fitXY"
-            />
+            android:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:id="@+id/tv_status"
@@ -35,8 +34,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:textStyle="bold"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/cover"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="學習 AI 一把抓：點亮人工智慧技能樹" />
@@ -72,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="12sp"
-        android:drawableLeft="@drawable/ic_timeline"
+        app:drawableLeftCompat="@drawable/ic_timeline"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
         tools:text="倒數2天" />
